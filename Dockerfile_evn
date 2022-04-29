@@ -1,0 +1,36 @@
+# Stage 1: Compile and Build angular codebase
+
+# Use official node image as the base image
+#FROM node:14-alpine3.10 as build
+
+# Set the working directory
+#WORKDIR /usr/local/main
+
+# Add the source code to main
+#COPY ./ /usr/local/main/
+
+# Install all the dependencies
+#RUN npm install
+
+# Generate the build of the application
+#RUN npm run build
+
+
+# Stage 2: Serve main with nginx server
+
+# Use official nginx image as the base image
+FROM node:14-alpine
+USER root
+# Copy the build output to replace the default nginx contents.
+COPY . ./
+COPY ./des.txt /resources/import/des.txt
+
+
+#RUN npm install
+
+EXPOSE 8086
+
+#CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "prod" ]
+# Expose port 80
+#EXPOSE 80

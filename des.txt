@@ -1,0 +1,28 @@
+{
+    "code": 0,
+    "message": "[LMS-ECL] success",
+    "data": {
+        "contract_number": "6000000239",
+        "contract_status_code": "ACT",
+        	"dpdVas": 10,
+"dpdStrategy":10,
+"totalDebt": 190000,
+"printOverDue": 100000,
+"intOverDue": 0,
+"lpi": 20000,
+"feeOverDue": 12000,
+"prinOutstading": 2000000,
+"nextDueDate": "2022-06-04",
+"nextDuePaymentTotal": 4000000,
+"totalPaymentInMonth": 0,
+"lastPaymentDate": "2021-06-04 19:00:00",
+"totalPayment": 4000000,
+"statusContract": "WO",
+"productName": "FIPO",
+"annexAmt": null,
+"bucketBom": "B1",
+"bucketCurrent": "B1",
+"emi": 200000
+    },
+    "lmsType": "ECL"
+}

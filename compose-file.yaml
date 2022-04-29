@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  easy-be2:
+    container_name: easy-be2
+    image: easy-be2:local-latest
+
+    ports:
+      - "8086:8086"
+    networks:
+      - pmns-app-net21
+
+networks:
+  pmns-app-net21:
+    driver: bridge
+#volumes:
+#  localdb:
+#    driver: local
